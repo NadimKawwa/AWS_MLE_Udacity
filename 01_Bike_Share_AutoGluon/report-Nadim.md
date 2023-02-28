@@ -23,13 +23,12 @@ The change was noticeable altough not as dramatic. The performance did improve a
 First thing would be to allocate more training time altough that would mean more resources. I would look into adding additional features such as if it's a morning rush hour (7 to 9AM) or an evening rush hour (5 to 7PM). Moreover, AutoGluon allows for additional models such as Random Forest and XGBoost that we can take advantage of.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
+|model|hp01|Presets|hp02|score|
 |--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+|Base Model|None|best_quality|None|1.8|
+|Added Features|None|best_quality|None|0.73|
+|hpo|NN (Learning rate, epochs, activation, dropout prob)|best_quality|GBM (Num boost rounds, num leaves) |0.58|
 
-![performance_table.png](img/performance_table.png)
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
